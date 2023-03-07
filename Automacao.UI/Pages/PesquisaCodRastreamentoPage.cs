@@ -15,6 +15,7 @@ namespace Automacao.UI.Pages
         #region Mapeamento
         By RastreioField = By.Id("objetos");
         By SearchRastreioButton = By.XPath("(//button[@class='bt-link-ic']//i[@class='ic-busca-out'])[1]");
+        By SearchRastreioSecondButton = By.Id("b-pesquisar");
         By CodIncorreto = By.XPath("//div[contains(text(), 'Código de objeto, CPF ou CNPJ  informado não está válido')]");
         #endregion
 
@@ -27,6 +28,12 @@ namespace Automacao.UI.Pages
     public void ClicarBuscar()
     {
         Click(SearchRastreioButton);
+    }
+
+    public void ClicarSegundaPagina()
+    {
+        driver.SwitchTo().Window(driver.WindowHandles[1]);
+        Click(SearchRastreioSecondButton);
     }
     #endregion
 

@@ -29,6 +29,8 @@ namespace Automacao.UI.Pages
         public void ClicarBuscar()
         {
             Click(SearchButton);
+
+            driver.SwitchTo().Window(driver.WindowHandles[1]);
         }
         #endregion
 
@@ -40,6 +42,7 @@ namespace Automacao.UI.Pages
 
         public void VerificaSeMensagemSucessoeExibida()
         {
+                
             Assert.IsTrue(driver.FindElement(MensagemSucesso).Displayed);
         }
         #endregion

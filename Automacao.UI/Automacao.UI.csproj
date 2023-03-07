@@ -139,6 +139,7 @@
     <Compile Include="Helpers\DriverFactory.cs" />
     <Compile Include="Helpers\ExtentReportHelpers.cs" />
     <Compile Include="Helpers\GeneralHelpers.cs" />
+    <Compile Include="Hooks\Hooks.cs" />
     <Compile Include="Pages\BuscaCepPage.cs" />
     <Compile Include="Pages\PesquisaCodRastreamentoPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

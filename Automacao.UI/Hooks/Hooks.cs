@@ -40,7 +40,7 @@ using TechTalk.SpecFlow;
             [AfterScenario]
             public static void TearDownScenario()
             {
-                DriverFactory.INSTANCE.Quit();
+                DriverFactory.QuitDriver();
             }
 
             [AfterTestRun]

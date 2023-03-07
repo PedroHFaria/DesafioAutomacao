@@ -22,6 +22,7 @@ namespace Automacao.UI.StepDefinitions
         {
             pesquisacodrastreamentoPage.PreencherCodRastreio(rastreio);
             pesquisacodrastreamentoPage.ClicarBuscar();
+            pesquisacodrastreamentoPage.ClicarSegundaPagina();
         }
 
         [StepDefinition(@"o site deve retornar que codigo de rastreamento nao existe")]
